@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 20 Digital Skills - LearnWithZia</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="/Favi.jpeg"> <!-- Sample favicon -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Font Styles */
+        body {
+            font-family: 'Roboto', sans-serif; /* Main font for body content */
+        }
+
+        h4, .navbar-brand, .nav-link {
+            font-family: 'Lato', sans-serif; /* Font for headers and navigation */
+        }
+
+        p, label, input, textarea, button {
+            font-family: 'Arial', sans-serif; /* Readable font for form elements */
+        }
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        body {
+            background-color: #f0f4f8; /* Light gray background */
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .header {
+            background-color: #382893; /* Dark blue/purple header */
+            color: #fff; /* White text */
+            padding: 20px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .course-list {
+            margin-top: 40px;
+        }
+
+        .list-group-item {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #000000; /* Dark blue border */
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 15px; /* Add padding for better spacing */
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+            background-color: #ffffff; /* Background color */
+        }
+
+        .list-group-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(23, 0, 66, 0.2);
+            background-color: #ffffff; /* Light blue hover effect */
+        }
+
+        .available {
+            color: green;
+            font-weight: bold;
+        }
+
+        .out-of-stock {
+            color: red;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #f8f9fa; /* Light gray footer */
+            padding: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer a {
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        footer a:hover {
+            color: #513e2b; /* Darker gray on hover */
+            text-decoration: underline;
+        }
+
+        .skill-image {
+            width: 100px;
+            height: auto;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header class="header">
+        <div class="container text-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">LearnWithZia</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="course.html">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <div class="container course-list">
+        <h4 class="text-center mb-4">Explore the Top 20 Digital Skills</h4>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Digital+Marketing" alt="Digital Marketing" class="skill-image"> 
+                Digital Marketing <span class="available">(Available)</span>
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Web+Development" alt="Web Development" class="skill-image"> 
+                Web Development <span class="available">(Available)</span>
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Graphic+Design" alt="Graphic Design" class="skill-image"> 
+                Graphic Designing <span class="available">(Available)</span>
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=SEO" alt="SEO" class="skill-image"> 
+                SEO Optimization 
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Content+Creation" alt="Content Creation" class="skill-image"> 
+                Content Creation 
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Social+Media" alt="Social Media" class="skill-image"> 
+                Social Media Management
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Data+Analysis" alt="Data Analysis" class="skill-image"> 
+                Data Analysis
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=UX+UI" alt="UX/UI Design" class="skill-image"> 
+                UX/UI Design
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Email+Marketing" alt="Email Marketing" class="skill-image"> 
+                Email Marketing
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=App+Development" alt="Mobile App Development" class="skill-image"> 
+                Mobile App Development
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Video+Editing" alt="Video Editing" class="skill-image"> 
+                Video Editing
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Cybersecurity" alt="Cybersecurity" class="skill-image"> 
+                Cybersecurity
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Blockchain" alt="Blockchain Technology" class="skill-image"> 
+                Blockchain Technology
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Cloud+Computing" alt="Cloud Computing" class="skill-image"> 
+                Cloud Computing
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=E-commerce" alt="E-commerce" class="skill-image"> 
+                E-commerce
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Copywriting" alt="Copywriting" class="skill-image"> 
+                Copywriting
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Affiliate+Marketing" alt="Affiliate Marketing" class="skill-image"> 
+                Affiliate Marketing
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=Project+Management" alt="Project Management" class="skill-image"> 
+                Project Management
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=VR" alt="Virtual Reality" class="skill-image"> 
+                Virtual Reality
+            </li>
+            <li class="list-group-item">
+                <img src="https://via.placeholder.com/100.png?text=IoT" alt="Internet of Things" class="skill-image"> 
+                Internet of Things (IoT)
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 LearnWithZia. All rights reserved.</p>
+            <p>Stay tuned for upcoming courses on these skills!</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

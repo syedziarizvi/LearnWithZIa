@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnWithZia</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="/Favi.jpeg"> <!-- Replace with your own favicon -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+
+/* Rest of your CSS */
+
+        /* Animation Styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Apply font styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e7ebef;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .header {
+            font-family: 'Lato', sans-serif;
+            background-color: #382893;
+            color: #fff;
+            padding: 20px 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .sidebar {
+            font-family: 'Nunito', sans-serif;
+            background-color: #ffffff;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .course-card {
+            font-family: 'Open Sans', sans-serif;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .course-card:hover {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            transition: transform 0.3s ease;
+        }
+
+        .course-card img:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-primary {
+            font-family: 'Roboto', sans-serif;
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #573aaf;
+            transform: scale(1.05);
+        }
+
+        .faq h5 {
+            font-family: 'Nunito', sans-serif;
+            cursor: pointer;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .faq h5:hover {
+            color: #573aaf;
+            transform: translateX(5px);
+        }
+
+        footer {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer a {
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+
+        footer a:hover {
+            color: #2b3d51;
+            text-decoration: underline;
+        }
+        .search-bar {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        .search-input {
+            padding-left: 30px;
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <body>
+        <!-- Header Section -->
+        <header class="header text-center">
+            <div class="container">
+                
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">LearnWithZia</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="course.html">Courses</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+               
+        </header>
+        
+    
+        <!-- Main Section -->
+        <div class="container my-4">
+            <div class="row">
+                <!-- Sidebar Section -->
+                <aside class="col-md-3">
+                    <div class="sidebar">
+                        <h5>Filter by</h5>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select class="form-control" id="category">
+                                <option>All</option>
+                                <option>Programming</option>
+                                <option>Design</option>
+                                <option>Marketing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="level">Level</label>
+                            <select class="form-control" id="level">
+                                <option>All Levels</option>
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Duration</label>
+                            <select class="form-control" id="duration">
+                                <option>All</option>
+                                <option>1-5 hours</option>
+                                <option>5-10 hours</option>
+                                <option>10+ hours</option>
+                            </select>
+                        </div>
+                    </div>
+                </aside>
+    
+                <!-- Course Catalog Section -->
+                <main class="col-md-9">
+                    <h4 class="text-2xl mb-4">Explore Free Online Courses</h4>
+                      <!-- Search Bar Start -->
+                <div class="search-bar">
+                    <input type="text" class="form-control search-input" placeholder="Search courses">
+                    <span class="search-icon">
+                        <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" alt="search-icon">
+                    </span>
+                </div>
+                <!-- Search Bar End -->
+                    <div class="row">
+                        
+                        <!-- Course Card 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="course-card">
+                                <img src="/gd.jpeg" alt="Course Image">
+                                <h5 class="mt-2">Graphic Designing</h5>
+                                <p>Complete Video Series Course of Adobe Illustrator.</p>
+                                <a href="/gd.html" class="btn btn-primary">Let's Learn</a>
+                            </div>
+                        </div>
+                        <!-- Course Card 2 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="course-card">
+                                <img src="/wd.jpeg" alt="Course Image">
+                                <h5 class="mt-2">Web Development: HTML, CSS, JavaScript</h5>
+                                <p>Learn complete Web Development in this course.</p>
+                                <a href="/wdplaylist.html" class="btn btn-primary">Let's Learn</a>
+                            </div>
+                        </div>
+                        <!-- Course Card 3 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="course-card">
+                                <img src="/gig.jpeg" alt="Course Image">
+                                <h5 class="mt-2">Digital Marketing Essentials</h5>
+                                <p>Master SEO, social media, and other key marketing strategies.</p>
+                                <a href="/digi.html" class="btn btn-primary">Let's Learn</a>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+    
+            <!-- FAQ Section -->
+            <section class="faq my-4">
+                <h4 class="text-2xl mb-4">Frequently Asked Questions</h4>
+                <div class="mb-2">
+                    <h5><i class="fas fa-chevron-right"></i> What is this platform about?</h5>
+                    <p>We offer free online courses in various subjects to help you advance your skills.</p>
+                </div>
+                <div class="mb-2">
+                    <h5><i class="fas fa-chevron-right"></i> How do I enroll in a course?</h5>
+                    <p>Simply select a course from the catalog and follow the instructions to enroll.</p>
+                </div>
+                <div class="mb-2">
+                    <h5><i class="fas fa-chevron-right"></i> Are these courses really free?</h5>
+                    <p>Yes, all our courses are free of charge. You can start learning without any cost.</p>
+                </div>
+            </section>
+        </div>
+    
+        <!-- Footer -->
+        <footer class="text-gray-600 body-font">
+            <div class="container px-5 py-8">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2 class="font-medium text-gray-900 mb-3">Our Services</h2>
+                        <nav class="list-unstyled mb-10">
+                            <li><a class="text-gray-600" href="#">Free Skill Education</a></li>
+                            <li><a class="text-gray-600" href="#">Free Login</a></li>
+                            <li><a class="text-gray-600" href="#">Free Lectures</a></li>
+                            <li><a class="text-gray-600" href="#">Free Queries</a></li>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="font-medium text-gray-900 mb-3">Our Team</h2>
+                        <nav class="list-unstyled mb-10">
+                            <li><a class="text-gray-600" href="#">Syed Zia Ali Rizvi (CEO)</a></li>
+                            <li><a class="text-gray-600" href="#">Muhammad Hassan (Graphic Designer)</a></li>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="font-medium text-gray-900 mb-3">Location</h2>
+                        <nav class="list-unstyled mb-10">
+                            <li><a class="text-gray-600" href="#">Rawalpindi</a></li>
+                            <li><a class="text-gray-600" href="#">Islamabad</a></li>
+                            <li><a class="text-gray-600" href="#">Gilgit</a></li>
+                        </nav>
+                    </div>
+                    <div class="col-md-3">
+                        <h2 class="font-medium text-gray-900 mb-3">FOLLOW US</h2>
+                        <nav class="list-unstyled mb-10">
+                            <li><a class="text-gray-600" href="#">Facebook</a></li>
+                            <li><a class="text-gray-600" href="#">LinkedIn</a></li>
+                            <li><a class="text-gray-600" href="#">Instagram</a></li>
+                        </nav>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p>&copy; 2024 LearnWithZia. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const categoryFilter = document.getElementById('category');
+                const levelFilter = document.getElementById('level');
+                const durationFilter = document.getElementById('duration');
+                const courseCards = document.querySelectorAll('.course-card');
+        
+                function filterCourses() {
+                    const selectedCategory = categoryFilter.value;
+                    const selectedLevel = levelFilter.value;
+                    const selectedDuration = durationFilter.value;
+        
+                    courseCards.forEach(card => {
+                        const cardCategory = card.getAttribute('data-category');
+                        const cardLevel = card.getAttribute('data-level');
+                        const cardDuration = card.getAttribute('data-duration');
+        
+                        const categoryMatch = (selectedCategory === 'All' || cardCategory === selectedCategory);
+                        const levelMatch = (selectedLevel === 'All Levels' || cardLevel === selectedLevel);
+                        const durationMatch = (selectedDuration === 'All' || cardDuration === selectedDuration);
+        
+                        if (categoryMatch && levelMatch && durationMatch) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                }
+        
+                // Attach event listeners to the dropdown filters
+                categoryFilter.addEventListener('change', filterCourses);
+                levelFilter.addEventListener('change', filterCourses);
+                durationFilter.addEventListener('change', filterCourses);
+            });
+        </script>
+        
+    </body>
+
+</html>
